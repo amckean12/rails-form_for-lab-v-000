@@ -104,3 +104,4 @@ Started GET "/school_class/1" for 129.130.18.101 at 2018-06-07 14:42:33 +0000
 Processing by SchoolClassesController#show as HTML
   Parameters: {"id"=>"1"}
   Rendered school_classes/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
