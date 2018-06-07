@@ -5,6 +5,10 @@ class SchoolClassesController < ApplicationController
     redirect_to school_class_path(@school_class)
   end
 
+  def new
+    @school_class = SchoolClass.new
+  end 
+
   private
 
   def school_class_params
