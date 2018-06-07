@@ -66,3 +66,41 @@ Started GET "/school_class/new" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
 Processing by SchoolClassesController#show as HTML
   Parameters: {"id"=>"new"}
   Rendered school_classes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 392ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+
+
+Started GET "/school_classes/new" for 129.130.18.101 at 2018-06-07 14:42:28 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 117ms (Views: 100.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/school_classes" for 129.130.18.101 at 2018-06-07 14:42:33 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZrW9KZh8lRGTxI5RBNkdn4exZtCfvCpZgqKx8+rAxrnzqLmp7rvTNbB++sriItOfpbZfNWdwbVgdOU2N2P5qXg==", "school_class"=>{"title"=>"ev", "room_number"=>"fgbg"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ev"], ["room_number", 0], ["created_at", "2018-06-07 14:42:33.919942"], ["updated_at", "2018-06-07 14:42:33.919942"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://165.227.81.218:46872/school_class/1
+Completed 302 Found in 10ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/school_class/1" for 129.130.18.101 at 2018-06-07 14:42:33 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered school_classes/show.html.erb within layouts/application (0.0ms)
