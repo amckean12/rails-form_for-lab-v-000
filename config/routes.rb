@@ -56,4 +56,5 @@ Rails.application.routes.draw do
   resources :school_classes, only: [:index, :new, :create]
   get '/school_class/:id', to: 'school_classes#show', as: 'school_class'
   resources :students, only: [:index, :new, :create]
+  get '/student/:id', to: 'students#show', as: 'student'
 end
