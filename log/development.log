@@ -145,3 +145,18 @@ Started GET "/school_classes/new" for 129.130.18.101 at 2018-06-07 14:44:50 +000
 Processing by SchoolClassesController#new as HTML
   Rendered school_classes/new.html.erb within layouts/application (1.5ms)
 Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/school_classes" for 129.130.18.101 at 2018-06-07 14:44:53 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yz14Wqh8leE8LOmbpJjbOGSumLO3ikScVdfHZxcVkFj2IHza3rvTxR+WnQBCYxU4RqmhVk9GA53KTDsZJSs8vw==", "school_class"=>{"title"=>"oi", "room_number"=>"2"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "oi"], ["room_number", 2], ["created_at", "2018-06-07 14:44:53.989138"], ["updated_at", "2018-06-07 14:44:53.989138"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://165.227.81.218:46872/school_class/3
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/school_class/3" for 129.130.18.101 at 2018-06-07 14:44:54 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
