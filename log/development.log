@@ -160,3 +160,6 @@ Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
 Started GET "/school_class/3" for 129.130.18.101 at 2018-06-07 14:44:54 +0000
 Processing by SchoolClassesController#show as HTML
   Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 15.8ms | ActiveRecord: 0.3ms)
