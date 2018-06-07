@@ -53,3 +53,16 @@ Migrating to CreateSchoolClasses (2)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "2"]]
   [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 129.130.18.101 at 2018-06-07 14:41:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 34ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_class/new" for 129.130.18.101 at 2018-06-07 14:42:09 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"new"}
+  Rendered school_classes/show.html.erb within layouts/application (0.3ms)
